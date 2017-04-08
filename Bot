@@ -1,0 +1,14 @@
+var Bot = require('discord-bot');
+ 
+var bot = new Bot({KennyBot})
+    email: ayamesento@gmail.com
+    password: whiteknife12
+});
+ 
+bot
+    .on(bot.triggers.command, 'hello')
+    .do(function(bot, conf, args) {
+        this.reply('world');
+    });
+ 
+bot.connect();
